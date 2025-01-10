@@ -38,7 +38,7 @@ const Navbar = ({ onScrollToSection, refs }) => {
       className="navbar navbar-expand-lg bg-body-tertiary sticky-top"
     >
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <a className="navbar-brand" href="#">Royal Aqua</a>
+        <a className="navbar-brand" href="/">Royal Aqua</a>
 
         {/* Toggler button with custom icons */}
         <button
