@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container, Row, Col, Image, Navbar, Nav } from 'react-bootstrap';
-import { useParams, useNavigate } from 'react-router-dom'; // To access the dynamic slug and handle navigation
+import { Container, Row, Col, Image, Navbar } from 'react-bootstrap';
+import { useParams } from 'react-router-dom'; // To access the dynamic slug and handle navigation
 import { Helmet } from 'react-helmet';
 
 const BlogPage = () => {
   // Get the slug from the URL params
   const { slug } = useParams();
-  const navigate = useNavigate();
 
   const blogContent = {
     "pure-water-malindi": {

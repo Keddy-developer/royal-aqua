@@ -54,45 +54,45 @@ const Navbar = ({ onScrollToSection, refs }) => {
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a
+              <button
                 className="nav-link active"
                 onClick={() => onScrollToSection(homeRef)}
                 aria-current="page"
               >
                 Home
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a
+              <button
                 className="nav-link"
                 onClick={() => onScrollToSection(aboutRef)}
               >
                 About
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a
+              <button
                 className="nav-link"
                 onClick={() => onScrollToSection(productsRef)}
               >
                 Products
-              </a>
+              </button>
             </li>  
             <li className="nav-item">
-              <a
+              <button
                 className="nav-link"
                 onClick={() => onScrollToSection(blogRef)}
               >
                 Blog
-              </a>
+              </button>
             </li>
             <li className="nav-item">
-              <a
+              <button
                 className="nav-link"
                 onClick={() => onScrollToSection(contactRef)}
               >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </div>
