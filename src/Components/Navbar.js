@@ -43,6 +43,7 @@ const Navbar = ({ onScrollToSection, refs }) => {
         {/* Toggler button with custom icons */}
         <button
           className="navbar-toggler"
+          style={{border: "none"}}
           type="button"
           onClick={handleToggleNavbar}
           aria-expanded={isNavOpen ? 'true' : 'false'}

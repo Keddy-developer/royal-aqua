@@ -133,49 +133,49 @@ function Home() {
           size: '10 Litres',
           price: 'Ksh 100',
           description: 'Perfect for families and events.',
-          imageUrl: '/10litre.jpg',
+          imageUrl: '/10litre.png',
         },
         {
           id: 2,
           size: '1.5 Litres',
           price: 'Ksh 300 per carton',
           description: 'Carton contains 12 bottles. Ideal for daily hydration.',
-          imageUrl: '/1.5litre.jpg',
+          imageUrl: '/1.5litre.png',
         },
         {
           id: 3,
           size: '0.5 Litres',
           price: 'Ksh 300 per carton',
           description: 'Carton contains 24 bottles. Great for on-the-go use.',
-          imageUrl: '/0.5litre.jpg',
+          imageUrl: '/0.5litre.png',
         },
         {
           id: 4,
           size: '20 Litres - Soft Container',
           price: 'Ksh 450',
           description: 'Convenient and affordable for office or home use.',
-          imageUrl: '/5litre.jpg',
+          imageUrl: '/5litre.png',
         },
         {
           id: 5,
           size: '20 Litres - Hard Container',
           price: 'Ksh 1500',
           description: 'Durable and reusable for long-term use.',
-          imageUrl: '/20litre.jpg',
+          imageUrl: '/20litre.png',
         },
         {
           id: 6,
           size: '1 Litre',
           price: 'Ksh 300 per carton',
           description: 'Carton contains 12 bottles. A handy option for daily use.',
-          imageUrl: '/1litre.jpg',
+          imageUrl: '/1litre.png',
         },
         {
           id: 7,
           size: '5 Litres',
           price: 'Ksh 330 per carton',
           description: 'Carton contains 4 bottles. Perfect for small gatherings.',
-          imageUrl: '/5litre.jpg',
+          imageUrl: '/5litre.png',
         },
         {
           id: 8,
@@ -243,7 +243,7 @@ function Home() {
 </motion.section>
 
 <motion.section
-        className="py-5 text-center"
+        className="py-5 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
