@@ -1,0 +1,267 @@
+.navbar-nav{
+  font-size: 1.5rem;
+}
+
+.product-card {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative; /* Position the quick view inside this container */
+    overflow: hidden;   /* Hide any overflow from image or button */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .product-image {
+    transform: scale(1.05); /* Zoom in effect on hover */
+  }
+  
+  .quick-view {
+    position: absolute;
+    bottom: 0; /* Position the button at the bottom of the image */
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    display: none; /* Hide the quick view button initially */
+    z-index: 10; /* Ensure button is above image */
+  }
+  
+  .image-container:hover .quick-view {
+    display: block; /* Show the quick view button on hover */
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .d-flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .custom-opacity-button {
+    background-color: #6c757d; /* Grey color */
+    color: white;
+    opacity: 0.7; /* Adjust the opacity to a value between 0 and 1 */
+  }
+  
+  .custom-opacity-button:hover {
+    opacity: 1; /* Full opacity when hovering */
+  }
+
+  .testimonials {
+    background-color: #f8f9fa;
+    border-top: 5px solid #007bff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .carousel-item {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  
+  
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color:rgba(201, 202, 230, 0.5);
+    padding: 10px;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    color: #007bff;
+  }
+  
+  .carousel-prev:focus,
+  .carousel-next:focus {
+    outline: none;
+  }
+  
+
+  .delivery-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 50px 0;
+  }
+  
+  .delivery-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .delivery-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px; /* Adjust the image height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .delivery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .delivery-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .delivery-info {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .delivery-info p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .delivery-row {
+      flex-direction: column; /* Stack the images vertically on small screens */
+      align-items: center;
+    }
+  
+    .delivery-image {
+      height: 200px;
+    }
+  }
+  .scroll-to-top {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .scroll-to-top:hover .fab,
+  .scroll-to-top:hover .fas {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Fixed height for the image container */
+    width: 100%; /* Ensures the container fits within the card */
+    overflow: hidden; /* Ensures any excess part of the image is hidden */
+  }
+  
+  .product-image {
+    height: 100%; /* Ensures the image fills the height of the container */
+    width: 100%; /* Ensures the image fills the width of the container */
+    object-fit: cover; /* Crops or scales the image to fill the container while maintaining its aspect ratio */
+  }
+
+  .blog-image-container {
+    width: 100%; /* Full width to match the card's width */
+    height: 200px; /* Fixed height for uniformity */
+    overflow: hidden; /* Hide overflowing parts of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blog-image {
+    width: 100%; /* Ensures the image fills the width of the container */
+    height: 100%; /* Ensures the image fills the height of the container */
+    object-fit: cover; /* Crops or scales the image to fit within the container */
+  }
+
+  .home-section h1 {
+    font-size: 3rem; /* Default font size for smaller screens */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease-in-out; /* Smooth font size transition */
+  }
+  
+  .home-section p {
+    font-size: 1.2rem; /* Default size for paragraph */
+    font-weight: lighter;
+    transition: font-size 0.3s ease-in-out; /* Smooth font size transition */
+  }
+  
+  /* Increased font size for larger screens */
+  @media (min-width: 900px) {
+    .home-section h1 {
+      font-size: 4.5rem; /* Larger font size for bigger screens */
+    }
+  
+    .home-section p {
+      font-size: 1.5rem; /* Larger font size for paragraphs */
+    }
+  
+    .home-section {
+      height: 500px; /* Height set to 500px for larger screens */
+    }
+  }
+  
+  /* Add smooth fade-in effect to text */
+  .home-section h1, .home-section p {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
