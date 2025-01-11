@@ -110,7 +110,7 @@ function Home() {
     }}
   >
     <div>
-      <h1 className="display-4">Welcome to Royal Aqua</h1>
+      <h1 className="display-4">Welcome to <span className="span-home">Royal Aqua</span></h1>
       <p className="lead">Providing clean and safe water through advanced reverse osmosis technology.</p>
     </div>
   </Container>
@@ -270,11 +270,11 @@ function Home() {
       <Col md={6}>
         <h3>Benefits of Using Reverse Osmosis</h3>
         <ul className="text-left" style={{listStyle: 'none'}}>
-          <li><i className="fas fa-check-circle text-primary mr-2"></i><strong>Removes Contaminants:</strong> Reverse osmosis effectively removes harmful contaminants such as chlorine, bacteria, heavy metals, and other impurities, ensuring that only clean and safe water reaches your glass.</li>
-          <li><i className="fas fa-tint text-primary mr-2"></i><strong>Improved Taste and Odor:</strong> The filtration process enhances the taste and odor of water by removing undesirable chemicals, resulting in crisp and fresh-tasting water.</li>
-          <li><i className="fas fa-heart text-primary mr-2"></i><strong>Protects Your Health:</strong> By eliminating harmful substances, reverse osmosis protects your body from potential toxins, contributing to overall health and wellness.</li>
-          <li><i className="fas fa-leaf text-primary mr-2"></i><strong>Environmental Responsibility:</strong> While we use plastic bottles to package our water, we are committed to sustainability. We encourage customers to recycle our bottles and reduce plastic waste wherever possible.</li>
-          <li><i className="fas fa-cogs text-primary mr-2"></i><strong>Low Maintenance:</strong> Once set up, a reverse osmosis system requires minimal maintenance while delivering reliable, high-quality water on demand.</li>
+          <li><i className="fas fa-check-circle mr-2" style={{color: '#233871'}}></i><strong> Removes Contaminants:</strong> Reverse osmosis effectively removes harmful contaminants such as chlorine, bacteria, heavy metals, and other impurities, ensuring that only clean and safe water reaches your glass.</li>
+          <li><i className="fas fa-tint mr-2" style={{color: '#233871'}}></i><strong> Improved Taste and Odor:</strong> The filtration process enhances the taste and odor of water by removing undesirable chemicals, resulting in crisp and fresh-tasting water.</li>
+          <li><i className="fas fa-heart mr-2" style={{color: '#233871'}}></i><strong> Protects Your Health:</strong> By eliminating harmful substances, reverse osmosis protects your body from potential toxins, contributing to overall health and wellness.</li>
+          <li><i className="fas fa-leaf mr-2" style={{color: '#233871'}}></i><strong> Environmental Responsibility:</strong> While we use plastic bottles to package our water, we are committed to sustainability. We encourage customers to recycle our bottles and reduce plastic waste wherever possible.</li>
+          <li><i className="fas fa-cogs mr-2" style={{color: '#233871'}}></i><strong> Low Maintenance:</strong> Once set up, a reverse osmosis system requires minimal maintenance while delivering reliable, high-quality water on demand.</li>
         </ul>
       </Col>
     </Row>
@@ -312,7 +312,7 @@ function Home() {
                       <Card.Body>
                         <Row>
                           <Col md={9}>
-                            <Card.Title className="h4">{testimonial.name}</Card.Title>
+                            <Card.Title className="h4" style={{color: '#233871'}}>{testimonial.name}</Card.Title>
                             <Card.Text>{testimonial.testimonial}</Card.Text>
                           </Col>
                         </Row>
@@ -407,12 +407,12 @@ function Home() {
               <Card.Img variant="top" src="/beach.jpg" className="blog-image" />
             </div>
             <Card.Body>
-              <Card.Title>Why Royal Aqua Is Your Trusted Water Provider in Malindi</Card.Title>
+              <Card.Title style={{color: '#233871'}}>Why Royal Aqua Is Your Trusted Water Provider in Malindi</Card.Title>
               <Card.Text>
                 At Royal Aqua, we are committed to providing you with the purest and safest drinking water...
               </Card.Text>
               <Link to="/blog/pure-water-malindi">
-                <Button variant="primary">Read More</Button>
+                <Button className="w-100" style={{backgroundColor: '#233871'}}>Read More</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -425,12 +425,12 @@ function Home() {
               <Card.Img variant="top" src="/reverse.jpg" className="blog-image" />
             </div>
             <Card.Body>
-              <Card.Title>Reverse Osmosis: The Key to Clean and Safe Drinking Water</Card.Title>
+              <Card.Title style={{color: '#233871'}}>Reverse Osmosis: The Key to Clean and Safe Drinking Water</Card.Title>
               <Card.Text>
                 Reverse osmosis is one of the most effective methods for purifying water, and it’s how we ensure Royal Aqua...
               </Card.Text>
               <Link to="/blog/reverse-osmosis">
-                <Button variant="primary">Read More</Button>
+                <Button className="w-100" style={{backgroundColor: '#233871'}}>Read More</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -443,12 +443,12 @@ function Home() {
               <Card.Img variant="top" src="/environ.jpg" className="blog-image" />
             </div>
             <Card.Body>
-              <Card.Title>Environmental Responsibility with Royal Aqua</Card.Title>
+              <Card.Title style={{color: '#233871'}}>Environmental Responsibility with Royal Aqua</Card.Title>
               <Card.Text>
                 At Royal Aqua, we are committed to sustainability. We use plastic bottles but encourage recycling to reduce waste...
               </Card.Text>
               <Link to="/blog/environmental-responsibility">
-                <Button variant="primary">Read More</Button>
+                <Button className="w-100" style={{backgroundColor: '#233871'}}>Read More</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -473,11 +473,10 @@ function Home() {
     <Row className="mt-5">
       {/* Location with Map */}
       <Col md={6} className="mb-4">
-        <h4 className="text-primary mb-3">Our Location</h4>
+        <h4 className=" mb-3" style={{color: '#233871'}}>Our Location</h4>
         <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
           <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.9495403099!2d39.66214215896454!3d-3.204185546617631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18401308d506d8cb%3A0x6a56c162109a6edb!2sMalindi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1689899999999!5m2!1sen!2ske"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
             width="100%"
             height="300"
             style={{ border: '0' }}
@@ -492,59 +491,71 @@ function Home() {
   md={6}
   className="mb-4 d-flex flex-column align-items-center justify-content-center"
 >
-        <h4 className="text-primary mb-3">Follow Us</h4>
-        <p className="text-muted">Connect with us on social media</p>
-        <div className="d-flex justify-content-center align-items-center gap-4">
-          {/* Facebook */}
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            style={{ color: '#4267B2', fontSize: '2rem' }}
-          >
-            <i className="fab fa-facebook-f"></i>
-          </a>
+  <h4 className="mb-3" style={{ color: '#233871' }}>Follow Us</h4>
+  <p className="text-muted">Connect with us on social media</p>
+  <div className="d-flex justify-content-center align-items-center gap-4">
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      style={{ color: '#4267B2', fontSize: '2rem' }}
+    >
+      <i className="fab fa-facebook-f"></i>
+    </a>
 
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/yourNumber"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            style={{ color: '#25D366', fontSize: '2rem' }}
-          >
-            <i className="fab fa-whatsapp"></i>
-          </a>
+    {/* WhatsApp */}
+    <a
+      href="https://wa.me/yourNumber"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      style={{ color: '#25D366', fontSize: '2rem' }}
+    >
+      <i className="fab fa-whatsapp"></i>
+    </a>
 
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            style={{
-              background: 'linear-gradient(45deg, #fd5949, #d6249f, #285AEB)',
-              WebkitBackgroundClip: 'text',
-              color: 'transparent',
-              fontSize: '2rem',
-            }}
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      style={{
+        background: 'linear-gradient(45deg, #fd5949, #d6249f, #285AEB)',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        fontSize: '2rem',
+      }}
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
 
-          {/* Twitter (now X) */}
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-            style={{ color: '#1DA1F2', fontSize: '2rem' }}
-          >
-            <i className="fab fa-x-twitter"></i>
-          </a>
-        </div>
-      </Col>
+    {/* Twitter (now X) */}
+    <a
+      href="https://www.twitter.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      style={{ color: '#1DA1F2', fontSize: '2rem' }}
+    >
+      <i className="fab fa-twitter"></i>
+    </a>
+
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      style={{ color: '#000000', fontSize: '2rem' }}
+    >
+      <i className="fab fa-tiktok"></i>
+    </a>
+  </div>
+</Col>
+
     </Row>
   </Container>
 </motion.section>

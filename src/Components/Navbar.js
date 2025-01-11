@@ -34,71 +34,89 @@ const Navbar = ({ onScrollToSection, refs }) => {
 
   return (
     <nav
-      ref={navbarRef}
-      className="navbar navbar-expand-lg bg-body-tertiary sticky-top"
-    >
-      <div className="container-fluid d-flex justify-content-between align-items-center">
-        <a className="navbar-brand" href="/">Royal Aqua</a>
-
-        {/* Toggler button with custom icons */}
-        <button
-          className="navbar-toggler"
-          style={{border: "none"}}
-          type="button"
-          onClick={handleToggleNavbar}
-          aria-expanded={isNavOpen ? 'true' : 'false'}
-        >
-          {/* Conditional rendering of FaBars (hamburger) or FaTimes (close) */}
-          {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
-        </button>
-
-        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <button
-                className="nav-link active"
-                onClick={() => onScrollToSection(homeRef)}
-                aria-current="page"
-              >
-                Home
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="nav-link"
-                onClick={() => onScrollToSection(aboutRef)}
-              >
-                About
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="nav-link"
-                onClick={() => onScrollToSection(productsRef)}
-              >
-                Products
-              </button>
-            </li>  
-            <li className="nav-item">
-              <button
-                className="nav-link"
-                onClick={() => onScrollToSection(blogRef)}
-              >
-                Blog
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="nav-link"
-                onClick={() => onScrollToSection(contactRef)}
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        </div>
+    ref={navbarRef}
+    className="navbar navbar-expand-lg sticky-top"
+    style={{ backgroundColor: '#233871' }}
+  >
+    <div className="container-fluid d-flex justify-content-between align-items-center">
+      <a
+        className="navbar-bran"
+        href="/"
+        style={{  fontWeight: 'bold', fontSize: '1.5rem' }}
+      >
+        Royal Aqua
+      </a>
+  
+      {/* Toggler button with custom icons */}
+      <button
+  className="navbar-toggler"
+  style={{ border: 'none' }}
+  onClick={handleToggleNavbar}
+  aria-expanded={isNavOpen ? 'true' : 'false'}
+>
+  {/* Both the icons are wrapped inside the button */}
+  {isNavOpen ? (
+    <FaTimes className='toggle-index' size={30} color="#ffffff" />
+  ) : (
+    <FaBars className='toggle-index' size={30} color="#ffffff" />
+  )}
+</button>
+  
+      <div
+        className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}
+      >
+        <ul className="navbar-nav ms-auto">
+          <li className="nav-item">
+            <button
+              className="nav-link active"
+              style={{ color: '#ffffff' }}
+              onClick={() => onScrollToSection(homeRef)}
+              aria-current="page"
+            >
+              Home
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className="nav-link"
+              style={{ color: '#ffffff' }}
+              onClick={() => onScrollToSection(aboutRef)}
+            >
+              About
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className="nav-link"
+              style={{ color: '#ffffff' }}
+              onClick={() => onScrollToSection(productsRef)}
+            >
+              Products
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className="nav-link"
+              style={{ color: '#ffffff' }}
+              onClick={() => onScrollToSection(blogRef)}
+            >
+              Blog
+            </button>
+          </li>
+          <li className="nav-item">
+            <button
+              className="nav-link"
+              style={{ color: '#ffffff' }}
+              onClick={() => onScrollToSection(contactRef)}
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  
   );
 };
 

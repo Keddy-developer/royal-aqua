@@ -299,6 +299,37 @@
     opacity: 1;
   }
 }
+.navbar-bran {
+  font-family: 'Trascend', sans-serif  !important;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #c59756;    /* Optional: Customize text color */
+  text-decoration: none; /* Ensure no underline */
+}
+.span-home{
+  font-family: 'Trascend', sans-serif  !important;
+  color: #c59756;
+}
+
+.nav-link{
+  color:#f0f8ff
+}
+
+
+@font-face {
+  font-family: 'Trascend';
+  src: url('/public/assets/fonts/transcend-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-toggler {
+  position: relative;
+}
+.toggle-index{
+  z-index: 1;
+}
+
+
 
   
   
