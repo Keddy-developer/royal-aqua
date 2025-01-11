@@ -475,14 +475,15 @@ function Home() {
       <Col md={6} className="mb-4">
         <h4 className=" mb-3" style={{color: '#233871'}}>Our Location</h4>
         <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
-            width="100%"
-            height="300"
-            style={{ border: '0' }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
+  width="100%"
+  height="300"
+  style={{ border: '0' }}
+  allowFullScreen=""
+  loading="lazy"
+  title="Royal Aqua Depot Location Map"
+></iframe>
         </div>
       </Col>
 
