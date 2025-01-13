@@ -80,16 +80,7 @@ const BlogPage = () => {
       />
       <p className="mt-4">{post.content}</p>
     </Col>
-    <Col md={4}>
-      <h3>Related Posts</h3>
-      <ul>
-        {Object.keys(blogContent).map((key) => (
-          <li key={key}>
-            <a href={`/blog/${key}`}>{blogContent[key].title}</a>
-          </li>
-        ))}
-      </ul>
-    </Col>
+    
   </Row>
 </Container>
     </>

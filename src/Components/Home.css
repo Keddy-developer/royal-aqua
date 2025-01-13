@@ -129,20 +129,17 @@
   
   .delivery-image {
     position: relative;
-    overflow: hidden;
     height: 250px; /* Adjust the image height */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
   
   .delivery-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 10px;
   }
   
@@ -299,7 +296,7 @@
     opacity: 1;
   }
 }
-.navbar-bran {
+.custom-navbar-brand {
   font-family: 'Trascend', sans-serif  !important;
   font-size: 1.5rem; /* Adjust size as needed */
   color: #c59756;    /* Optional: Customize text color */
@@ -328,6 +325,8 @@
 .toggle-index{
   z-index: 1;
 }
+
+
 
 
 

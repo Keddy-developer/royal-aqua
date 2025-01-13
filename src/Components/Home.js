@@ -31,31 +31,26 @@ function Home() {
   const testimonials = [
     {
       name: "John Doe",
-      image: "path_to_customer_image1.jpg", // Replace with your image path
       testimonial:
         "Royal Aqua has truly changed the way I consume water. The taste is incredible, and I love how clean and crisp it feels! Highly recommend to anyone looking for top-tier water.",
     },
     {
       name: "Sarah L",
-      image: "path_to_customer_image2.jpg", // Replace with your image path
       testimonial:
         "I’ve been using Royal Aqua water for months, and I can’t imagine going back. The water is refreshing, and I love that I’m supporting a company committed to quality.",
     },
     {
       name: "David K",
-      image: "path_to_customer_image3.jpg", // Replace with your image path
       testimonial:
         "After trying Royal Aqua, I noticed a significant improvement in the taste of my water. It's now the only brand I trust for my daily hydration needs.",
     },
     {
       name: "Anna",
-      image: "path_to_customer_image4.jpg", // Replace with your image path
       testimonial:
         "The best decision I made was switching to Royal Aqua. The taste is so much better, and I feel more hydrated and healthier. I highly recommend it to everyone.",
     },
     {
       name: "Mark",
-      image: "path_to_customer_image5.jpg", // Replace with your image path
       testimonial:
         "Royal Aqua has provided me with consistent, clean, and safe drinking water. It's made a real difference in my daily routine. I can't imagine going back to anything else.",
     },
@@ -182,7 +177,7 @@ function Home() {
           size: 'Refills Available',
           price: 'Affordable Prices',
           description: 'We offer refills for small to big containers. Visit us today!',
-          imageUrl: '/refill.jpg',
+          imageUrl: '/refill.png',
         },
       ].map((product, index) => (
         <Col key={index} md={4} className="mb-4 slide-in-left"> {/* 4 cards per row on medium screens */}
@@ -224,7 +219,7 @@ function Home() {
       {/* Image on top on small screens and left on medium or larger screens */}
       <Col md={6} className="text-center text-md-left mb-4 mb-md-0">
         <img
-          src="/shopping.jpg"  // Replace with your image path
+          src="/water.jpg"  // Replace with your image path
           alt="About Us"
           className="img-fluid rounded"  // img-fluid makes the image responsive
         />
@@ -336,57 +331,57 @@ function Home() {
         </Container>
       </motion.section>
 
-    <motion.section
-        className="delivery-section py-5" 
-        style={{position: 'relative'}}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-      <Container>
-        <h2 className="text-center mb-4">How We Deliver</h2>
+      <motion.section
+  className="delivery-section py-5"
+  style={{ position: "relative" }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <Container>
+    <h2 className="text-center mb-4">How We Deliver</h2>
 
-        {/* Delivery Images */}
-        <Row className="delivery-row">
-          <Col xs={12} md={6} className="mb-4">
-            <div className="delivery-image">
-              <img
-                src="lorry.jpg" // Replace with actual image path
-                alt="Delivery by Lorry"
-                className="img-fluid"
-              />
-            </div>
-            <h4 className="text-center">Delivery by Lorry</h4>
-          </Col>
-          <Col xs={12} md={6} className="mb-4">
-            <div className="delivery-image">
-              <img
-                src="tuktuk.jpg" // Replace with actual image path
-                alt="Delivery by TukTuk"
-                className="img-fluid"
-              />
-            </div>
-            <h4 className="text-center">Delivery by TukTuk</h4>
-          </Col>
-        </Row>
+    {/* Image Section */}
+    <div className="text-center mb-4">
+      <img
+        src="delivery.png" // Replace with actual image path
+        alt="Delivery"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          display: "block",
+          margin: "0 auto",
+        }}
+      />
+    </div>
 
-        {/* Delivery Information Section */}
-        <Row>
-          <Col>
-            <div className="delivery-info text-center">
-              <p>
-                We offer a reliable delivery system tailored to your needs. Whether you need a large amount of water or a small
-                refill, we have the perfect delivery method for you.
-              </p>
-              <p>
-                Our fleet includes spacious lorries for bulk deliveries and agile tuk-tuks for fast, local deliveries. No matter
-                where you are, we ensure your water reaches you safely and on time.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </motion.section>
+    {/* Delivery Text Layout */}
+    <Row className="align-items-center">
+      {/* Left Text Section */}
+      <Col xs={12} md={6} className="text-center text-md-end mb-4 mb-md-0">
+        <div className="delivery-info">
+          <p>
+            We offer a reliable delivery system tailored to your needs. Whether
+            you need a large amount of water or a small refill, we have the
+            perfect delivery method for you.
+          </p>
+        </div>
+      </Col>
+
+      {/* Right Text Section */}
+      <Col xs={12} md={6} className="text-center text-md-start">
+        <div className="delivery-info">
+          <p>
+            Our fleet includes spacious lorries for bulk deliveries and agile
+            tuk-tuks for fast, local deliveries. No matter where you are, we
+            ensure your water reaches you safely and on time.
+          </p>
+        </div>
+      </Col>
+    </Row>
+  </Container>
+</motion.section>
+
 
     
     <motion.section
@@ -402,7 +397,7 @@ function Home() {
       <Row>
         {/* Blog Post 1 */}
         <Col md={4}>
-          <Card className="shadow-lg">
+          <Card className="shadow-lg mb-2">
             <div className="blog-image-container">
               <Card.Img variant="top" src="/beach.jpg" className="blog-image" />
             </div>
@@ -420,7 +415,7 @@ function Home() {
   
         {/* Blog Post 2 */}
         <Col md={4}>
-          <Card className="shadow-lg">
+          <Card className="shadow-lg mb-2">
             <div className="blog-image-container">
               <Card.Img variant="top" src="/reverse.jpg" className="blog-image" />
             </div>
@@ -469,96 +464,110 @@ function Home() {
         transition={{ duration: 1 }}
       >
   <Container>
-    <h2>Contact Us</h2>
-    <Row className="mt-5">
-      {/* Location with Map */}
-      <Col md={6} className="mb-4">
-        <h4 className=" mb-3" style={{color: '#233871'}}>Our Location</h4>
-        <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
+  <h2>Contact Us</h2>
+  <Row className="mt-5">
+    {/* Location with Map */}
+    <Col md={6} className="mb-4">
+      <h4 className="mb-3" style={{ color: '#233871' }}>Our Location</h4>
+      <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
         <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
-  width="100%"
-  height="300"
-  style={{ border: '0' }}
-  allowFullScreen=""
-  loading="lazy"
-  title="Royal Aqua Depot Location Map"
-></iframe>
-        </div>
-      </Col>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
+          width="100%"
+          height="300"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Royal Aqua Depot Location Map"
+        ></iframe>
+      </div>
+    </Col>
 
-      {/* Social Media */}
-      <Col
-  md={6}
-  className="mb-4 d-flex flex-column align-items-center justify-content-center"
->
-  <h4 className="mb-3" style={{ color: '#233871' }}>Follow Us</h4>
-  <p className="text-muted">Connect with us on social media</p>
-  <div className="d-flex justify-content-center align-items-center gap-4">
-    {/* Facebook */}
-    <a
-      href="https://www.facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-icon"
-      style={{ color: '#4267B2', fontSize: '2rem' }}
+    {/* Social Media */}
+    <Col
+      md={6}
+      className="mb-4 d-flex flex-column align-items-center justify-content-center"
     >
-      <i className="fab fa-facebook-f"></i>
-    </a>
+      <h4 className="mb-3" style={{ color: '#233871' }}>Follow Us</h4>
+      <p className="text-muted">Connect with us on social media</p>
+      <div className="d-flex justify-content-center align-items-center gap-4">
+        {/* Facebook */}
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{ color: '#4267B2', fontSize: '2rem' }}
+        >
+          <i className="fab fa-facebook-f"></i>
+        </a>
 
-    {/* WhatsApp */}
-    <a
-      href="https://wa.me/yourNumber"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-icon"
-      style={{ color: '#25D366', fontSize: '2rem' }}
-    >
-      <i className="fab fa-whatsapp"></i>
-    </a>
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/yourNumber"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{ color: '#25D366', fontSize: '2rem' }}
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
 
-    {/* Instagram */}
-    <a
-      href="https://www.instagram.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-icon"
-      style={{
-        background: 'linear-gradient(45deg, #fd5949, #d6249f, #285AEB)',
-        WebkitBackgroundClip: 'text',
-        color: 'transparent',
-        fontSize: '2rem',
-      }}
-    >
-      <i className="fab fa-instagram"></i>
-    </a>
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{
+            background: 'linear-gradient(45deg, #fd5949, #d6249f, #285AEB)',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+            fontSize: '2rem',
+          }}
+        >
+          <i className="fab fa-instagram"></i>
+        </a>
 
-    {/* Twitter (now X) */}
-    <a
-      href="https://www.twitter.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-icon"
-      style={{ color: '#1DA1F2', fontSize: '2rem' }}
-    >
-      <i className="fab fa-twitter"></i>
-    </a>
+        {/* Twitter */}
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{ color: '#1DA1F2', fontSize: '2rem' }}
+        >
+          <i className="fab fa-twitter"></i>
+        </a>
 
-    {/* TikTok */}
-    <a
-      href="https://www.tiktok.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-icon"
-      style={{ color: '#000000', fontSize: '2rem' }}
-    >
-      <i className="fab fa-tiktok"></i>
-    </a>
-  </div>
-</Col>
+        {/* TikTok */}
+        <a
+          href="https://www.tiktok.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{ color: '#000000', fontSize: '2rem' }}
+        >
+          <i className="fab fa-tiktok"></i>
+        </a>
+      </div>
+      <div className="contact-info mt-4">
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-user" style={{ color: '#233871', marginRight: '8px' }}></i>
+          Name: Cynthia Teresa
+        </p>
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-phone" style={{ color: '#25D366', marginRight: '8px' }}></i>
+          Phone no.: 0796118880
+        </p>
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-envelope" style={{ color: '#ff9800', marginRight: '8px' }}></i>
+          Email: cynthia.triza@yahoo.com
+        </p>
+      </div>
+    </Col>
+  </Row>
+</Container>
 
-    </Row>
-  </Container>
 </motion.section>
 
 

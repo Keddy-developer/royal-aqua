@@ -31,7 +31,7 @@ const ScrollToTop = () => {
           className="scroll-to-top"
           style={{
             position: "fixed",
-            bottom: "20px",
+            bottom: "50px",
             right: "20px",
             zIndex: "9999",
             display: "flex",
@@ -50,12 +50,12 @@ const ScrollToTop = () => {
               color: "#333",
             }}
           >
-            Call: <strong>0794338999</strong>
+            Call: <strong>0796118880</strong>
           </div>
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/254794338999"
+            href="https://wa.me/254796118880"
             target="_blank"
             rel="noopener noreferrer"
             style={{
