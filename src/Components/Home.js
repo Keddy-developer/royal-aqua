@@ -30,7 +30,7 @@ function Home() {
 
   const testimonials = [
     {
-      name: "John Doe",
+      name: "John",
       testimonial:
         "Royal Aqua has truly changed the way I consume water. The taste is incredible, and I love how clean and crisp it feels! Highly recommend to anyone looking for top-tier water.",
     },
@@ -465,28 +465,28 @@ function Home() {
       >
   <Container>
   <h2>Contact Us</h2>
-  <Row className="mt-5">
-    {/* Location with Map */}
-    <Col md={6} className="mb-4">
-      <h4 className="mb-3" style={{ color: '#233871' }}>Our Location</h4>
-      <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
-          width="100%"
-          height="300"
-          style={{ border: '0' }}
-          allowFullScreen=""
-          loading="lazy"
-          title="Royal Aqua Depot Location Map"
-        ></iframe>
-      </div>
-    </Col>
-
+  <Row className="mt-2">
+  
     {/* Social Media */}
     <Col
       md={6}
       className="mb-4 d-flex flex-column align-items-center justify-content-center"
     >
+       <div className="contact-info mt-2">
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-user" style={{ color: '#233871', marginRight: '8px' }}></i>
+          Name: Cynthia Magongwe
+        </p>
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-phone" style={{ color: '#25D366', marginRight: '8px' }}></i>
+          Phone no.: 0796118880
+        </p>
+        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          <i className="fas fa-envelope" style={{ color: '#ff9800', marginRight: '8px' }}></i>
+          Email: cynthia.triza@yahoo.com
+        </p>
+      </div>
+
       <h4 className="mb-3" style={{ color: '#233871' }}>Follow Us</h4>
       <p className="text-muted">Connect with us on social media</p>
       <div className="d-flex justify-content-center align-items-center gap-4">
@@ -503,7 +503,7 @@ function Home() {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/yourNumber"
+          href="https://wa.me/254796118880"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -541,7 +541,7 @@ function Home() {
 
         {/* TikTok */}
         <a
-          href="https://www.tiktok.com"
+          href="https://www.tiktok.com/@cynthiati17?_t=ZN-8t2BAnjPQNq&_r=1"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -550,19 +550,22 @@ function Home() {
           <i className="fab fa-tiktok"></i>
         </a>
       </div>
-      <div className="contact-info mt-4">
-        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
-          <i className="fas fa-user" style={{ color: '#233871', marginRight: '8px' }}></i>
-          Name: Cynthia Teresa
-        </p>
-        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
-          <i className="fas fa-phone" style={{ color: '#25D366', marginRight: '8px' }}></i>
-          Phone no.: 0796118880
-        </p>
-        <p style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>
-          <i className="fas fa-envelope" style={{ color: '#ff9800', marginRight: '8px' }}></i>
-          Email: cynthia.triza@yahoo.com
-        </p>
+     
+    </Col>
+
+      {/* Location with Map */}
+        <Col md={6} className="mb-4">
+      <h4 className="mb-3" style={{ color: '#233871' }}>Our Location</h4>
+      <div className="map-container" style={{ borderRadius: '10px', overflow: 'hidden' }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.4203855651417!2d40.123933734962634!3d-3.227305208986012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1815858c3247b11d%3A0xf36eb07da27fc1c3!2sRoyal%20Aqua%20Depot!5e1!3m2!1sen!2ske!4v1736596316460!5m2!1sen!2ske" 
+          width="100%"
+          height="300"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Royal Aqua Depot Location Map"
+        ></iframe>
       </div>
     </Col>
   </Row>
