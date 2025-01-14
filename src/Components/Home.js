@@ -492,7 +492,7 @@ function Home() {
       <div className="d-flex justify-content-center align-items-center gap-4">
         {/* Facebook */}
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/share/15aUxXWmzF/?mibextid=wwXlfr"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -514,7 +514,7 @@ function Home() {
 
         {/* Instagram */}
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/marisa_malisha?igsh=ZmoxcG96azUzaXA%3D&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -526,17 +526,6 @@ function Home() {
           }}
         >
           <i className="fab fa-instagram"></i>
-        </a>
-
-        {/* Twitter */}
-        <a
-          href="https://www.twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-          style={{ color: '#1DA1F2', fontSize: '2rem' }}
-        >
-          <i className="fab fa-twitter"></i>
         </a>
 
         {/* TikTok */}
